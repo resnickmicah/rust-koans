@@ -24,9 +24,9 @@ fn main() {
 
 #[allow(unused_macros)]
 macro_rules! koan {
-    ($name:expr) => (
+    ($name:expr) => {
         include!(concat!("koans/", $name, ".rs"));
-    );
+    };
 }
 
 #[cfg(not(test))]
