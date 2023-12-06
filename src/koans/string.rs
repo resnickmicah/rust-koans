@@ -78,6 +78,8 @@ fn slicing_the_byte() {
     let dog = "忠犬ハチ公";
     let slice = &dog[0..2];
     assert!(dog == "忠犬ハチ公");
+    assert!(dog != slice);
+
 }
 
 // You can truncate Strings
